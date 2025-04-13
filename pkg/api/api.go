@@ -13,11 +13,11 @@ import (
 
 const (
 	// BaseURL is the base url of the wakatime api.
-	BaseURL = "https://api.wakatime.com/api/v1"
+	BaseURL = "http://localhost:3000/api/v1"
 	// BaseIPAddrv4 is the base ip address v4 of the wakatime api.
-	BaseIPAddrv4 = "143.244.210.202"
+	BaseIPAddrv4 = "127.0.0.1"
 	// BaseIPAddrv6 is the base ip address v6 of the wakatime api.
-	BaseIPAddrv6 = "2604:a880:4:1d0::2a7:b000"
+	BaseIPAddrv6 = "::1"
 	// DefaultTimeoutSecs is the default timeout used for requests to the wakatime api.
 	DefaultTimeoutSecs = 120
 )

@@ -58,13 +58,13 @@ func setFlags(cmd *cobra.Command, v *viper.Viper) {
 	flags.String(
 		"api-url",
 		"",
-		"API base url used when sending heartbeats and fetching code stats. Defaults to https://localhost:3000/api/v1/.",
+		"API base url used when sending heartbeats and fetching code stats. Defaults to http://localhost:3000/api/v1/.",
 	)
 	flags.String(
 		"apiurl",
 		"",
 		"(deprecated) API base url used when sending heartbeats and fetching code stats. Defaults to"+
-			" https://localhost:3000/api/v1/.",
+			" http://localhost:3000/api/v1/.",
 	)
 	flags.String(
 		"category",
