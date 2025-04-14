@@ -24,7 +24,6 @@ import (
 // Err is returned on any other api response related error.
 func (c *Client) SendHeartbeats(ctx context.Context, heartbeats []heartbeat.Heartbeat) ([]heartbeat.Result, error) {
 	logger := log.Extract(ctx)
-
 	url := c.baseURL + "/users/current/heartbeats.bulk"
 
 	logger.Debugf("sending %d heartbeat(s) to api at %s", len(heartbeats), url)
