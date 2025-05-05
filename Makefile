@@ -1,12 +1,12 @@
 .DEFAULT_GOAL := build
 
 # globals
-BINARY_NAME?=wakatime-cli
+BINARY_NAME?=stattrack-cli
 BUILD_DIR?="./build"
 CGO_ENABLED?=0
 COMMIT?=$(shell git rev-parse --short HEAD)
 DATE?=$(shell date -u '+%Y-%m-%dT%H:%M:%S %Z')
-REPO=github.com/wakatime/wakatime-cli
+REPO=github.com/ymohit1603/stattrack-cli
 VERSION?=<local-build>
 
 # ld flags for go build
@@ -178,12 +178,12 @@ test-all: lint test test-integration test-shell-script test-ip
 .DEFAULT_GOAL := build
 
 # globals
-BINARY_NAME?=wakatime-cli
+BINARY_NAME?=stattrack-cli
 BUILD_DIR?="./build"
 CGO_ENABLED?=0
 COMMIT?=$(shell git rev-parse --short HEAD)
 DATE?=$(shell date -u '+%Y-%m-%dT%H:%M:%S %Z')
-REPO=github.com/wakatime/wakatime-cli
+REPO=github.com/ymohit1603/stattrack-cli
 VERSION?=<local-build>
 
 # ld flags for go build
